@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*header*/
+header {
+    width: 100%;
+    height: auto;
+}
+
+.logo {
+    padding: 1%;
+    width: 17%;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+    padding-right: 3%;
+}
+
+.menu li {
+    float: left;
+    text-align: center;
+    height: 90px;
+    padding-top: 32px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 40px 20px;
+   
+}
+
+.menu li:hover {
+    color: rgb(76, 182, 239); 
+    transition: .3s;
+}
+
+.menu li a:hover {
+    color: rgb(76, 182, 239);
+    transition: all .2s;
+}
+/*header*/
+
+.slider {
+    width: 100%;
+    height: 350px;
+}
+
+ul.slides {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slides li {
+    width: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .3s;
+    animation: change-slide 9s infinite;
+}
+
+ul.slides li:first-child {
+    opacity: 1;
+}
+
+.slides li:nth-child(2) {
+    animation-delay: 3s;
+  }
+  
+  .slides li:nth-child(3) {
+    animation-delay: 6s;
+  }
+
+@keyframes change-slide {
+    0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      33% {
+        opacity: 1;
+      }
+      53% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+}
+
+ul.slides li:target {
+    opacity: 2;
+}
+
+ul.slides li img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/*seccion 1*/
+.eligenos {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.eligenos .text h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+
+.eligenos .text p {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 70px;
+}
+.text hr {
+    width: 250px;
+    height: 10px;
+    background-color: rgb(13, 163, 238);
+    border-radius: 5px;
+}
+
+.textimg {
+    text-align: center;
+    margin-top: 100px;
+}
+
+section .textimg div {
+    display: inline-block;
+    height: 23%;
+    width: 23%;
+    padding: 10px;
+    font-size: 22px;
+}
+
+section .textimg div img {
+    width: 200px;
+}
+
+.textimg a {
+    text-decoration: none;
+    color: black;
+}
+
+.textimg a:hover h3{
+    color: rgb(13, 163, 238);
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+/*seccion 1*/
+
+/*seccion 2*/
+.opciones {
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+}
+
+.opciones div, aside{
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+}
+
+.opciones div img {
+    display: block;
+    width: 900px;
+}
+
+.opciones aside {
+    width: 30%;
+    height: 248px;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.opciones aside h4 {
+   margin-block-start: 20px;
+}
+/*seccion 2*/
+
+/*seccion 3*/
+.galeria {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.galeria div {
+    display: inline-block;
+    width: 31%;
+    height: auto;
+    padding: 11px;
+    font-size: 14px;
+}
+
+.galeria div h3 {
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.galeria div p {
+    text-align: justify;
+    padding-left: 2px;
+    padding-right: 3px;
+}
+
+.galeria div img {
+    width: 100%;
+}
+/*seccion 3*/
+
+/*seccion 4*/
+.marcas {
+    text-align: center;
+}
+
+.marcas a img:hover {
+    transition: 0.2s;
+    transform: scale(1.08);
+}
+/*seccion 4*/
+
+/*seccion 5*/
+.productos {
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.productos .descripcion p, h1{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.descripcion hr {
+    width: 250px;
+    height: 10px;
+    background-color: rgb(13, 163, 238);
+    border-radius: 5px;
+}
+
+.galedesc {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.galedesc a {
+    text-decoration: none;
+    color: black;
+}
+
+.galedesc div {
+    width: 24%;
+    display: inline-block;
+    padding: 0% 0.4%;
+    font-size: 20px;
+}
+
+.galedesc h3 {
+    margin-block: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.galedesc div img {
+    width: 100%;
+}
+
+.galedesc h3:hover {
+    text-decoration-line: underline;
+    color: rgb(13, 163, 238);
+    transition: all ease .3s;
+}
+
+.galedesc h3:hover > img {
+    transition: .4s;
+    transform: scale(1.12);
+}
+
+/*seccion 5*/
+
+/*footer*/
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+
+footer div {
+    text-align: left;
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1%;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li::before {
+    content: '';
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-size: 10px;
+    background-image: url(Imagenesf/lista.jpg);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+footer li {
+    padding-bottom: 5px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: white;
+}
+
+footer li a:hover {
+    text-decoration-line: underline;
+}
+
+footer hr {
+    width: 51%;
+    height: 3px;
+    margin: 0;
+    background-color: rgb(32, 174, 235);
+    border: 0;
+    border-radius: 3px;
+}

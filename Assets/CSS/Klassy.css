@@ -1,0 +1,163 @@
+body{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*Header*/
+header{
+    padding-top: 6px;
+    height: 65px;
+    width: 100%;
+}
+
+header img {
+    padding-left: 5%;
+}
+
+.menu{
+    margin-top: 20px;
+    position: relative;
+    float: right;
+    padding-right: 5%;
+}
+
+.menu li{
+    float: left;
+    list-style: none
+}
+
+.menu li a{
+    font-family: 'Fredoka', sans-serif;
+    text-decoration: none;
+    color: black;
+    padding: 15px
+}
+
+/*Cuerpo*/
+.imgs {
+    font-size: 0;
+    text-align: center;
+}
+
+.columnas {
+    width: 100%;
+    text-align: center;
+}
+
+.col{
+    width: 480px;
+    height: 480px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.col p img{
+    width: 480px;
+}
+
+.triplecol{
+    height: 151px;
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+    padding: 0
+}
+
+.triplecol img{
+    height: 143px;
+    padding: 5px;
+}
+
+.colimg {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    vertical-align: top;
+    text-align: center;
+    
+
+}
+.colimg img{
+    padding: 10px;
+    height: 300px;
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 69px;
+    background-color: rgb(251, 88, 73);
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+    height: auto;
+    position: relative;
+}
+
+.menu2 {
+    width: 300px;
+    padding-left: 5%;
+}
+
+.menu2 li {
+    float: left;
+    list-style: none;
+}
+
+.menu2 li a {
+   padding-right: 13px;
+}
+
+.menu2 li img {
+    width: 62px;
+}
+
+
+
+.texto {
+    float: right;
+    padding-right: 5%;
+    margin-top: 17px;
+    text-align: right;
+    color: white;
+    font-family: 'mukta', sans-serif;
+    font-weight: bold;
+}
+
+.klassy{
+    padding-left: 20%;
+}
+
+.klassy img {
+    width: 120px;
+}
+
+/*Detalles Menores y Efectos*/
+.space {
+    height: 20px;
+}
+
+.menu li a:hover {
+    background-color: rgb(251, 88, 73);
+    color: white;
+    border-radius: 10%;
+}
+
+.smenu {
+    width: 100%;
+}
+
+.menutext {
+    padding-left: 20%;
+}
+

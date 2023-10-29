@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('../Imgs/Imagenesporta/Fondo.png');
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    font-family: "Press Start 2P", sans-serif;
+    position: fixed;
+    z-index: 999;
+}
+
+header h1, ul {
+    display: inline-block;
+}
+
+header h1 {
+    width: 23.6%;
+    padding: 1% 5%;
+    color: white;
+    transition: color .2s;
+}
+
+header a:hover {
+    color: rgb(64,244,210);
+    transition: 1s;
+}
+
+header ul {
+    float: right;
+    list-style-type: none;
+    width: 46%;
+    vertical-align: top;
+    padding: 1%;
+}
+
+header li {
+    float: left;
+    padding: 18px 0px;
+    border: white solid 5px;
+    visibility: hidden;
+}
+
+header li a {
+    visibility: visible;
+    padding-right: 0;
+    width: 100%;
+    padding: 10% 16px;
+    font-size: 100%;
+}
+
+header li:hover {
+    visibility: visible;
+    border-color: rgb(64,244,210);
+}
+
+header li a:hover {
+    color: rgb(64,244,210);
+}
+
+#portada {
+    margin-top: 120px;
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 10%;
+    animation: none;
+}
+
+#portada div {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    font-size: 225%;
+}
+
+#portada div h1{
+    padding-top: 2%;
+}
+
+#portada div h1 {
+    animation: aparecer-texto 1s 1;
+    opacity: 1;
+}
+
+#portada div p {
+    animation: aparecer-texto 1s 1;
+    opacity: 1;
+}
+
+.letra-pequeña {
+    font-size: 7px;
+    margin-block-start: 1px;
+}
+
+#portada img {
+    width: 65%;
+    border: solid white 10px;
+    border-radius: 100%;
+    opacity: 1;
+    animation: aparecer-img 1.25s 1;
+}
+
+@keyframes aparecer-texto{
+    from {
+        transition: all 4s;
+        transform: translateY(100px);
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer-img {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;
+    transition: all 1.25s;
+    
+    }
+
+}
+
+div {
+    display: inline-block;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    view-timeline: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: slideup;
+    animation-range: entry 20% cover 50%;
+    animation-fill-mode: both;
+}
+
+#who {
+    width: 100%;
+    padding: 8%;
+}
+
+#who p {
+    font-size: 170%;
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills {
+    display: inline-block;
+    width: 100%;
+    height: 650px;
+}
+
+.Virtudes {
+    border: solid white 5px;
+    width: 47.44%;
+    display: inline-block;
+    margin: 1%;
+}
+
+#titulo {
+    font-size: 250%;
+}
+
+.Virtudes div {
+    display: inline-block;
+    padding: 1%;
+}
+
+.imgs {
+    float: left;
+    padding: 0;
+    width: 32%;
+}
+
+.imgs img {
+    width: 100%;
+}
+
+.sktext {
+    width: 400px;
+    margin: 40px 25.9px;
+    font-size: 17.6px;
+}
+
+ul.slider-img, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.slider-img {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.slider-img li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    transition: opacity .5s;
+}
+
+ul.slider-img li img {
+    transition: opacity .5s;
+}
+
+ul.slider-img li:first-child {
+    opacity: 1;
+}
+
+ul.slider-img li:target {
+    opacity: 1;
+}
+
+.botones {
+    height: 70px;
+    padding: 0;
+}
+
+.botones li {
+    display: inline-block;
+    text-align: center;
+}
+
+.botones li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 30px;
+    font-size: 20px;
+    border: solid white 5px;
+    border-radius: 100%;
+}
+
+#slide1 img, #slide2 img {
+    width: 30%;
+}
+
+#slide3 {
+    position: relative;
+}
+
+#slide3 img{
+    width: 30.34%;
+    filter: grayscale(1);
+    z-index: 1;
+}
+
+#slide3 p {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 30px;
+    opacity: 0;
+    transition: opacity .3s;
+    padding: 80px 5px;
+}
+
+#slide3 p:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+#proyectos {
+    align-items: center;
+}
+
+
+.trabajos {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    width: 40%;
+    height: 167px;
+    margin: 1%;
+    vertical-align: middle;
+    align-items: center;
+    scale: 1;
+    transition: scale .5s;
+    overflow: hidden;
+}
+
+
+.trabajos:hover, .links:hover{
+    scale: 1.15;
+    transition: .5s;
+    background-color: rgba(255, 255, 255, .5)
+}
+
+.trabajos .imgs {
+    width: 569px;
+    height: 167px
+}
+
+.trabajos h1 {
+    font-size: 36px;
+    margin-block: 0;
+}
+
+.trabajos h1 a {
+    padding: 70px 170px;
+}
+
+.trabajos h1 a:hover {
+    color: rgba(0, 0, 0);
+}
+
+.trabajos .imgs img {
+    width: 50%;
+    margin: 46px 0px;
+}
+
+.links {
+    display: inline-block;
+    height: 100%
+}
+
+
+footer {
+    width: 100%;
+    background-color: black;
+    height: 200px;
+    padding: 30px;
+    font-size: 13px;
+}
+
+.andev {
+    padding-left: 3%;
+}
+
+.andev a:hover {
+    color: rgb(64,244,210);
+    transition: 1s;
+}
+
+.andev, .icons {
+    display: inline-block;
+    width: 45%;
+    height: 100px;
+}
+.icons {
+    float: right;
+    padding-left: 0;
+    padding-right: 3%;
+    list-style: none;
+    margin: 0;
+}
+
+.icons li {
+    float: right;
+    display: block;
+    clear: both;
+    padding: 5px;
+    scale: 1;
+    transition: scale .5s;
+    
+}
+
+.icons li:hover {
+    scale: 1.2;
+    transition: .5s;
+}
+
+.email {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
